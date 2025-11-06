@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lab5</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>  
+<h2>1. Конвертер температур</h2>
+
+<label>Температура за Фаренгейтом:</label>
+<input type="text" id="fahrenheit">
+<br><br>
+
+<label>Температура за Цельсієм:</label>
+<input type="text" id="celsius">
+
+
+<h2>2. Перевірка знання таблиці множення</h2>
+
+<p id="score">Загальний рахунок: 0% (0 правильних відповідей з 0)</p>
+
+<button id="nextBtn">наступне завдання</button>
+
+<p id="task"></p>
+
+<input type="text" id="answer">
+
+<button id="checkBtn">перевірити</button>
+
+<p id="result"></p>
+
+
+<h2>3. Перевірка таблиці множення (вибір варіанту)</h2>
+
+<p id="score2">Загальний рахунок: 0% (0 правильних відповідей з 0)</p>
+
+<button id="nextBtn2">наступне завдання</button>
+
+<p id="task2"></p>
+
+<div id="options"></div>
+
+<p id="result2"></p>
+
+
+<h2>4.  Перелистування зображень</h2>
+<div id="rotator" class="rotator"></div>
+
+
+<h2>5. Реалізація captcha</h2>
+    <p>Введіть число</p>
+    <div id="captcha"></div>
+    <br>
+    <input type="text" id="userInput" oninput="checkCaptcha()">
+    <p id="captchaResult"></p>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+.rotator {
+    width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.rotator img {
+    width: 100%;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+.rotator a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    width: auto;
+}
+
+.rotator a:first-of-type {
+    left: -70px;
+}
+
+.rotator a:nth-of-type(2) {
+    right: -75px;
+}
+
+.rotator div:last-child {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+.pixel {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background: red; 
+}
+
+.captcha-digit {
+    display: inline-block;
+    margin: 8px;
+    line-height: 0; 
+}
+
+
+
