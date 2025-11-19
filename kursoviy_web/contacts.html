@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти | BizAnalyzer - Зв'яжіться з нами</title>
+    <meta name="description" content="Зв'яжіться з командою BizAnalyzer для консультації щодо аналітики та автоматизації вашого бізнесу. Телефони, email, адреса.">
+    <link rel="icon" type="image/png" href="assets/images/Icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/variables.css">
+</head>
+<body>
+    <section class="header-section">
+        <header class="header d-flex items-center">
+            <div class="content-wrap d-flex w-full justify-between">
+                <div class="logo">
+                    <img src="assets/images/Icon.png" alt="BizAnalyzer логотип" class="logo-icon">
+                    <a href="index.html" class="title-color">BizAnalyzer</a>
+                </div>
+                <div id="burgerMenu" class="burger-menu">
+                    <i id="openIcon" class="fa-solid fa-bars"></i>
+                    <i id="closeIcon" class="fa-solid fa-xmark d-none"></i>
+                </div>
+                <nav id="headerNav" class="header-nav">
+                    <ul class="main-menu items-center">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="getting-started.html">Почати</a></li>
+                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="contacts.html" class="active">Контакти</a></li>
+                    </ul>
+                    <ul class="main-registration">
+                        <li><a href="#" class="main-registration-link">Вхід</a></li>
+                        <li><a href="#" class="btn btn--main-color btn__header">Реєстрація</a></li>
+                    </ul>
+                </nav>
+                <ul class="main-registration main-registration-tablet">
+                    <li><a href="#" class="main-registration-link">Вхід</a></li>
+                    <li><a href="#" class="btn btn--main-color btn__header">Реєстрація</a></li>
+                </ul>
+            </div>
+        </header>
+    </section>
+
+    <main class="contacts-main">
+        <section class="contacts-hero">
+            <div class="content-wrap">
+                <h1>Зв'яжіться з нами</h1>
+                <p class="hero-subtitle">Ми завжди готові допомогти вашому бізнесу рости</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="content-wrap">
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h2>Наші контакти</h2>
+                        <p>Зв'яжіться з нами зручним для вас способом. Ми відповімо якомога швидше.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Адреса</h3>
+                                    <p>вул. Хрещатик, 25<br>Київ, 01001<br>Україна</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Телефон</h3>
+                                    <p>+38 (044) 123-45-67<br>+38 (067) 123-45-67</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Email</h3>
+                                    <p>info@bizanalyzer.com<br>support@bizanalyzer.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Години роботи</h3>
+                                    <p>Пн-Пт: 9:00 - 18:00<br>Сб: 10:00 - 15:00<br>Нд: вихідний</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h3>Соціальні мережі</h3>
+                            <div class="social-buttons">
+                                <a href="#" class="social-btn facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                    Facebook
+                                </a>
+                                <a href="#" class="social-btn linkedin">
+                                    <i class="fab fa-linkedin-in"></i>
+                                    LinkedIn
+                                </a>
+                                <a href="#" class="social-btn telegram">
+                                    <i class="fab fa-telegram-plane"></i>
+                                    Telegram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <h2>Надіслати повідомлення</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Ім'я *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone">
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Компанія</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Послуга</label>
+                                <select id="service" name="service">
+                                    <option value="">Оберіть послугу</option>
+                                    <option value="analytics">Бізнес-аналітика</option>
+                                    <option value="automation">Автоматизація</option>
+                                    <option value="reporting">Звітність</option>
+                                    <option value="consulting">Консалтинг</option>
+                                    <option value="other">Інше</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Повідомлення *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--main-color btn--large">
+                                <span class="btn-text">Надіслати повідомлення</span>
+                                <div class="btn-loading d-none">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    Відправка...
+                                </div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="content-wrap">
+                <h2>Ми на карті</h2>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Інтерактивна карта</p>
+                        <small>Київ, вул. Хрещатик, 25</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="cta">
+        <a href="getting-started.html" class="cta-link">
+            <h2>Почніть свій шлях до автоматизації вже сьогодні</h2>
+        </a>
+        <a href="getting-started.html" class="btn">Розпочати</a>
+    </section>
+
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <div class="logo">
+                        <img src="assets/images/Icon2.png" alt="BizAnalyzer логотип">
+                        <span>BizAnalyzer</span>
+                    </div>
+                    <p>Copyright © 2025 BizAnalyzer ltd.<br>Всі права захищені</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Компанія</h4>
+                        <ul>
+                            <li><a href="about.html">Про нас</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="contacts.html">Контакти</a></li>
+                            <li><a href="#">Ціни</a></li>
+                            <li><a href="#">Відгуки</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Підтримка</h4>
+                        <ul>
+                            <li><a href="#">Центр допомоги</a></li>
+                            <li><a href="#">Умови сервісу</a></li>
+                            <li><a href="#">Правова інформація</a></li>
+                            <li><a href="#">Політика конфіденційності</a></li>
+                            <li><a href="#">Статус</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col newsletter">
+                        <h4>Будьте в курсі</h4>
+                        <form>
+                            <input type="email" placeholder="Ваша електронна адреса">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="success-content">
+                <i class="fas fa-check-circle"></i>
+                <h3>Повідомлення відправлено!</h3>
+                <p>Дякуємо за ваш запит. Ми зв'яжемося з вами найближчим часом.</p>
+                <button class="btn btn--main-color" id="closeSuccessModal">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/script/script.js"></script>
+    <script src="assets/script/contacts.js"></script>
+</body>
+</html>
