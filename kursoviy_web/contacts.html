@@ -54,7 +54,6 @@
         <section class="contact-content">
             <div class="content-wrap">
                 <div class="contact-grid">
-                    <!-- Contact Information -->
                     <div class="contact-info">
                         <h2>Наші контакти</h2>
                         <p>Зв'яжіться з нами зручним для вас способом. Ми відповімо якомога швидше.</p>
@@ -161,14 +160,13 @@
                                 <label for="message">Повідомлення *</label>
                                 <textarea id="message" name="message" rows="5" required></textarea>
                                 <span class="error-message" id="messageError"></span>
-                            </div>
-                            
+                            </div>    
                             <button type="submit" class="btn btn--main-color btn--large">
                                 <span class="btn-text">Надіслати повідомлення</span>
-                                <div class="btn-loading d-none">
+                                <span class="btn-loading d-none">
                                     <i class="fas fa-spinner fa-spin"></i>
                                     Відправка...
-                                </div>
+                                </span>
                             </button>
                         </form>
                     </div>
@@ -247,8 +245,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Success Modal -->
     <div id="successModal" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
