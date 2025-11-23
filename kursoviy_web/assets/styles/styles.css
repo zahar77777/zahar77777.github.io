@@ -608,19 +608,16 @@ ul {
     text-decoration: none;
 }
 
-/* ===== ВИПРАВЛЕНІ СТИЛІ CTA ===== */
 .cta {
     background: #f5f7fa;
     text-align: center;
     padding: 64px 20px;
 }
 
-/* Головна сторінка - велика CTA */
 .cta--home {
     margin-top: 80px;
 }
 
-/* Інші сторінки - менша CTA */
 .cta--other {
     margin-top: 0;
 }
@@ -907,7 +904,6 @@ ul {
         height: auto;
     }
 
-    /* CTA для планшетів */
     .cta {
         padding: 3.5rem 2rem;
         text-align: center;
@@ -2593,5 +2589,65 @@ ul {
     
     .contact-form-container {
         padding: 3rem;
+    }
+}
+
+
+/* ===== Scroll to Top Button Styles ===== */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(76, 175, 79, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#scrollToTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#scrollToTopBtn:hover {
+    transform: scale(1.1);
+    background-color: #45a049;
+}
+
+#scrollToTopBtn:active {
+    transform: scale(0.95);
+}
+
+/* Mobile styles for scroll to top button */
+@media screen and (max-width: 768px) {
+    #scrollToTopBtn {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 18px;
+    }
+}
+
+/* Tablet styles for scroll to top button */
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    #scrollToTopBtn {
+        width: 50px;
+        height: 50px;
+        bottom: 25px;
+        right: 25px;
     }
 }

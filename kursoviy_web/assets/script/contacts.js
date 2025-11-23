@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     const successModal = document.getElementById('successModal');
@@ -169,17 +168,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
         }
     }
-
-    const socialButtons = document.querySelectorAll('.social-btn');
-    socialButtons.forEach(button => {
-        button.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-2px)';
-        });
-        
-        button.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0)';
-        });
-    });
 
     const mapPlaceholder = document.querySelector('.map-placeholder');
     if (mapPlaceholder) {

@@ -42,3 +42,38 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+
+function initScrollToTopButton() {
+    const scrollToTopBtn = document.createElement('button');
+    scrollToTopBtn.innerHTML = '↑';
+    scrollToTopBtn.setAttribute('aria-label', 'Прокрутити до початку сторінки');
+    scrollToTopBtn.id = 'scrollToTopBtn';
+    document.body.appendChild(scrollToTopBtn);
+
+    function toggleScrollToTopButton() {
+        const scrollY = window.scrollY;
+        const viewportHeight = window.innerHeight;
+        
+        if (scrollY > viewportHeight * 0.5) {
+            scrollToTopBtn.classList.add('show');
+        } else {
+            scrollToTopBtn.classList.remove('show');
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    scrollToTopBtn.addEventListener('click', scrollToTop);
+    window.addEventListener('scroll', toggleScrollToTopButton);
+    toggleScrollToTopButton();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    initScrollToTopButton();
+});
