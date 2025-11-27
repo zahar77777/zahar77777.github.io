@@ -774,8 +774,6 @@ ul {
     font-size: 16px;
 }
 
-/*---------------------Media Queries---------------------*/
-
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .hero-section {
         flex-direction: row;
@@ -1341,7 +1339,6 @@ ul {
     }
 }
 
-/* ===== Getting Started Styles ===== */
 .getting-started-main {
     background-color: #F5F7FA;
     padding: 2rem 0;
@@ -1643,7 +1640,6 @@ ul {
     font-weight: 600;
 }
 
-/* ===== Media Queries for Getting Started ===== */
 @media screen and (min-width: 768px) {
     .steps-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1696,7 +1692,6 @@ ul {
     }
 }
 
-/* ===== About Page Styles ===== */
 .about-main {
     background-color: #F5F7FA;
 }
@@ -1924,7 +1919,6 @@ ul {
     padding: 3rem;
 }
 
-/* ===== Media Queries for About Page ===== */
 @media screen and (min-width: 768px) {
     .about-hero-content h1 {
         font-size: 3rem;
@@ -1981,7 +1975,6 @@ ul {
     }
 }
 
-/* ===== Gallery Page Styles ===== */
 .gallery-page {
     background-color: #F5F7FA;
 }
@@ -2216,7 +2209,6 @@ ul {
     line-height: 1.3;
 }
 
-/* ===== Media Queries for Gallery Page ===== */
 @media screen and (min-width: 768px) {
     .gallery-hero-title {
         font-size: 3rem;
@@ -2277,7 +2269,6 @@ ul {
     }
 }
 
-/* ===== Contacts Page Styles ===== */
 .contacts-main {
     background-color: #F5F7FA;
 }
@@ -2368,7 +2359,6 @@ ul {
     line-height: 1.6;
 }
 
-/* Social Links */
 .social-links h3 {
     font-size: 1.2rem;
     color: var(--title-color);
@@ -2553,7 +2543,6 @@ ul {
     margin-bottom: 1.5rem;
 }
 
-/* ===== Media Queries for Contacts Page ===== */
 @media screen and (min-width: 768px) {
     .contacts-hero h1 {
         font-size: 3rem;
@@ -2592,8 +2581,6 @@ ul {
     }
 }
 
-
-/* ===== Scroll to Top Button Styles ===== */
 #scrollToTopBtn {
     position: fixed;
     bottom: 30px;
@@ -2631,7 +2618,6 @@ ul {
     transform: scale(0.95);
 }
 
-/* Mobile styles for scroll to top button */
 @media screen and (max-width: 768px) {
     #scrollToTopBtn {
         width: 45px;
@@ -2642,7 +2628,6 @@ ul {
     }
 }
 
-/* Tablet styles for scroll to top button */
 @media screen and (min-width: 769px) and (max-width: 1199px) {
     #scrollToTopBtn {
         width: 50px;
